@@ -1,0 +1,27 @@
+[
+    {
+      "nombre": "Julieta",
+      "imagen": "./imagenes/Cliente-julieta2.jpg",
+      "titulo": "Me siento mas segura.",
+      "comentario": "Desde que contrate el seguro, puedo hacer mis cosas tranquila."
+    },
+    {
+      "nombre": "Marcos",
+      "imagen": "./imagenes/Cliente-Marcos2.jpg",
+      "titulo": "Puedo sentarme afuera.",
+      "comentario": "Antes, no confiaba en los espacios de afuera de las confiterias, ahora puedo tomar mi cafe con la seguridad de que si pasa algo, estoy asegurado."
+    },
+    {
+      "nombre": "Rocio",
+      "imagen": "./imagenes/Cliente-rocio2.jpg",
+      "titulo": "Lo contrate, porque me lo recomendaron.",
+      "comentario": "Me asesoraron muy cordialmente con las diferentes opciones de planes y lo hicieron a medida, estoy muy conforme con el sevicio."
+    },
+    {
+      "nombre": "Ricardo",
+      "imagen": "./imagenes/Cliente-ricardo2.jpg",
+      "titulo": "Muy conforme.",
+      "comentario": "Excelente servicio, muy recomendable."
+    }
+  ]
+  

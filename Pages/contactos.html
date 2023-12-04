@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/Eagle-Techazul.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Seguros Eagle-Tech</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <img src="../imagenes/2Eagle-Tech transparente.png" alt="Logo de la marca">
+    </div>
+    <button class="button">
+      <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>    
+      <nav class="nav">
+        <ul class="nav-links">
+            <li class="li"><a href="../index.html">Eagle-Tech</a></li>
+            <li class="li"><a href="./quienesSomos.html">Quienes Somos</a></li>
+            <li class="li"><a href="./nuestrosPlanes.html">Nuestros Planes</a></li>
+            <li class="li"><a href="./dondeEstamos.html">Donde Estamos</a></li>
+            <li class="li"><a href="../templates/login.html">Administrador</a></li>
+            <li class="li"><a href="./contactos.html" class="btn"><button>Contáctanos</button></a></li>
+        </ul>
+    </nav>            
+  </header>
+    <main class="align-form">
+      <form autocomplete="off" action="https://formspree.io/f/mbjvqrnj" method="POST"  id="formulario" onsubmit="return validacion()">
+            
+        <h2>¡Dejanos tus datos y te contactamos!</h2>
+
+        <div class="datos">
+
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+            <input type="tel" name="telefono" placeholder="Telefono" id="telefono">
+            <input type="email" name="correo" placeholder="Correo" id="correo">
+            <textarea name="message" cols="30" rows="5" placeholder="Mensaje" id="mensaje"></textarea>
+            <input class="btn-enviar" type="submit" value="Enviar" id="submit">
+            <!-- <button class="btn-enviar" type="submit" id="submit">Enviar</button> -->
+
+
+        </div>
+
+
+      </form>
+    </main>
+    <footer class="pie-pagina">
+      <div class="grupo-2">
+        <small>&copy; 2023 <b>Eagle-Tech Protección Tecnológica</b> - Todos los Derechos Reservados.</small>
+      </div>
+    </footer>
+      <script src="../Javascrip/scrip.js"></script>  
+      <script src="../Javascrip/nav-bar-resposive.js"></script>
+</body>
+</html>
