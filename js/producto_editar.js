@@ -6,11 +6,12 @@ createApp({
 data() {
 return {
 id:0,
-nombre:"",
-imagen:"",
-stock:0,
+plan:"",
+descripcion:"",
 precio:0,
-url:'https://wwenzel.pythonanywhere.com/productos/'+id,
+imagen:"",
+// url:'https://wwenzel.pythonanywhere.com/productos/'+id,
+url:'http://localhost:5000/productos/'+id,
 }
 },
 methods: {
@@ -21,10 +22,10 @@ fetch(url)
 
 console.log(data)
 this.id=data.id
-this.nombre = data.nombre;
-this.imagen=data.imagen
-this.stock=data.stock
+this.plan = data.plan;
+this.descripcion=data.descripcion
 this.precio=data.precio
+this.imagen=data.imagen
 })
 .catch(err => {
 console.error(err);
@@ -33,9 +34,9 @@ this.error=true
 },
 modificar() {
 let producto = {
-nombre:this.nombre,
+plan:this.plan,
+descripcion: this.descripcion,
 precio: this.precio,
-stock: this.stock,
 imagen:this.imagen
 }
 var options = {
