@@ -10,7 +10,7 @@ plan:"",
 descripcion:"",
 precio:0,
 imagen:"",
-url:'https://wwenzel.pythonanywhere.com/productos/'+id,
+url:'https://eagletech.pythonanywhere.com/productos/'+id,
 //url:'http://localhost:5000/productos/'+id,
 }
 },
