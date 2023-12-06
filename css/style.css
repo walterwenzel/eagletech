@@ -495,6 +495,13 @@ main{
     padding: auto;
     margin: 40px 40px;
 }
+
+.inlineNP {
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
 .carta-cuerpo{
     max-width: 300px;
     min-width: 200px;
@@ -505,6 +512,8 @@ main{
     text-align: center;
     background-color: #dfe3e7f3;
     box-shadow: 0 0 14px #0554b9;
+    height: 550px;
+    box-sizing: border-box;
 }
 .carta-titulo{
     color: #0554b9;
@@ -846,7 +855,7 @@ input , textarea {
     height: auto; /* Mantiene la proporción original de la imagen */
     margin-bottom: 10px; /* Espacio entre la imagen y el texto del comentario */
     margin-right: 20px; /* Separación horizontal entre imágenes */
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
 #comentarios-container h4 {
@@ -855,6 +864,7 @@ input , textarea {
     font-size: 20px;
     color: #f8fbfd;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 /* #comentarios-container p.titulo {
@@ -904,3 +914,8 @@ input , textarea {
     justify-content: space-between;
 } */
 
+.listaNP {
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

@@ -50,8 +50,67 @@
           </div>
         </div>
       </div>
-        <div>
-          <div class="carta" id="planes2">
+      <!-- <div id="app" class="container"> -->
+    <div id="app" class="carta">
+      <div v-if="error">
+        <p>Lo sentimos , ........</p>
+      </div>
+      <div v-else>
+        <section v-if="cargando">
+          <div class="spinner-border">
+            <p>Cargando .....</p>
+          </div>
+        </section>
+        <section v-else>
+            <!-- <div class="table-responsive"> -->
+          <div class=inlineNP v-for="producto in productos">
+            <div class="carta-cuerpo">
+              <ul class="listaNP">
+                <li><h2 class="carta-titulo">{{producto.plan}}</h2></li>
+                <li><p class="carta-texto">{{producto.descripcion}}</p></li>
+                <!-- <div class="lista_beneficios"> -->
+                  <li>
+                    <i class='bx bx-mobile-alt bx-md bx-tada-hover'></i>
+                    <span>Robo total</span>
+                  </li>
+                  <li>
+                    <i class='bx bx-world bx-md bx-tada-hover' ></i>
+                    <span>Cobertura mundial</span>
+                  </li>
+                  <li>
+                    <i class='bx bx-meteor bx-md bx-tada-hover'></i>
+                    <span>Daño total</span>
+                  </li>
+                  <li>
+                    <i class='bx bx-band-aid bx-md bx-tada-hover'></i>
+                    <span>Daño parcial</span>
+                  </li>
+                  <li>Precio: ${{producto.precio}}</li>
+                  <li><img width="60" :src="producto.imagen" :alt="producto.nombre"></li>
+  
+                <!-- </div> -->
+                <li><a href="#" class="carta-boton"><button>Más Información</button></a></li>
+              <!-- </div> -->
+              </ul>
+            </div>
+          </div>
+                <!-- <table class="">
+                    <tbody>
+                        <tr class="carta-cuerpo" v-for="producto in productos">
+                            <td><h2 class="carta-titulo">{{producto.plan}}</h2></td>
+                            <td><p class="carta-texto">{{producto.descripcion}}</p></td>                            
+                            <td>{{producto.precio}}</td>
+                            <td><img width="60" :src="producto.imagen" :alt="producto.nombre"></td>
+                          </div>
+                        </tr>
+                    </tbody>
+                </table> -->
+          
+        </section>
+    </div>
+  </div>
+        <!-- <div>
+          <div class="carta">
             <div class="carta-cuerpo">
               <h2 class="carta-titulo">Laptop Guardian</h2>
               <p class="carta-texto">Nuestro plan "Laptop Guardian" está diseñado para amantes de la tecnología en movimiento. Ofrecemos protección esencial para tu laptop.</p>              
@@ -122,7 +181,7 @@
               <a href="#" class="carta-boton"><button>Más Información</button></a>
             </div>
           </div>
-        </div>
+        </div> -->
     </main>
     <!--PIE DE PAGINA, footer-->
     <footer class="pie-pagina">
@@ -161,8 +220,9 @@
           <small>&copy; 2023 <b>Eagle-Tech Protección Tecnológica</b> - Todos los Derechos Reservados.</small>
       </div>
   </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
     <script src="https://kit.fontawesome.com/7459002549.js" crossorigin="anonymous"></script>
     <script src="../Javascrip/nav-bar-resposive.js"></script>
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/nuestrosPlanes.js"></script>
 </body>
 </html>

@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 tarjeta.classList.add("tarjeta");
 
                 tarjeta.innerHTML = `
-                    <img src="${comentario.imagen}" alt="${comentario.nombre}">
+                   
+                    <img src="${comentario.imagen}">
                     <h4>${comentario.titulo}</h4>
                     <p>${comentario.comentario}</p>
                 `;
-
+                    // alt="${comentario.nombre}"
                 // Agregar la tarjeta al contenedor de comentarios
                 comentariosContainer.appendChild(tarjeta);
             });
