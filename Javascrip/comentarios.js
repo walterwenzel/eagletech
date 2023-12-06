@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Ruta al archivo JSON local
-    const jsonPath = "./javascrip/comentarios.json";
+    //const jsonPath = "./javascrip/comentarios.json";
+    const jsonPath = "https://raw.githubusercontent.com/walterwenzel/eagletech.github.io/main/Javascrip/comentarios.json";
 
     // Obtener el contenedor de comentarios
     const comentariosContainer = document.getElementById("comentarios-container");
