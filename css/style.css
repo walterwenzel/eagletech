@@ -742,6 +742,7 @@ input , textarea {
     color: #0554b9;
     font-size: 17px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn-enviar:hover {
