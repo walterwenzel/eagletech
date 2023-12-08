@@ -68,7 +68,7 @@
               <ul class="listaNP">
                 <li><h2 class="carta-titulo">{{producto.plan}}</h2></li>
                 <li><p class="carta-texto">{{producto.descripcion}}</p></li>
-                <!-- <div class="lista_beneficios"> -->
+                <div class="lista_beneficios">
                   <li>
                     <i class='bx bx-mobile-alt bx-md bx-tada-hover'></i>
                     <span>Robo total</span>
@@ -85,10 +85,11 @@
                     <i class='bx bx-band-aid bx-md bx-tada-hover'></i>
                     <span>Daño parcial</span>
                   </li>
+                </div>
                   <li>Precio: ${{producto.precio}}</li>
                   <li><img width="60" :src="producto.imagen" :alt="producto.nombre"></li>
   
-                <!-- </div> -->
+                
                 <li><a href="#" class="carta-boton"><button>Más Información</button></a></li>
               <!-- </div> -->
               </ul>
