@@ -1,4 +1,4 @@
-# Eagle-Tech Seguros ----> Probar [Aquí](https://eagle-tech.netlify.app/)
+# Eagle-Tech Seguros
 # Estructura general:
 
 El conjunto de páginas que conforman Eagle-Tech consisten en 5 páginas distintas navegables y diferenciadas una de otro, estas secciones son: página principal (Eagle-Tech), Quienes Somos, Nuestros Planes, Donde Estamos y Contáctanos( Formulario). La navegación puede realizarse verticalmente para ver información sobre cada sección, y a través de clics se cambia de una sección a otra con la barra superior de la página.
